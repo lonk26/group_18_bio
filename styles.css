@@ -1,16 +1,18 @@
+
 /* General page styling */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    font-family: 'Trebuchet MS', sans-serif;
+    background-color: #f0f8ff;
     margin: 0;
     padding: 0;
+    color: #263238;
 }
 
 /* Header section styling */
 header {
-    background: #333;
+    background: #00bcd4;
     color: #fff;
-    padding: 10px 0;
+    padding: 20px 0;
     text-align: center;
 }
 
@@ -22,69 +24,120 @@ header {
 
 /* Menu button styling */
 header nav {
-    margin-top: 10px;
+    margin-top: 15px;
 }
 
 header nav button {
-    background: #007BFF;
+    background: #0288d1;
     color: white;
     border: none;
-    padding: 10px 15px;
-    border-radius: 5px;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', serif;
     cursor: pointer;
-    margin: 0 5px;
+    margin: 0 8px;
+    transition: background 0.3s, transform 0.2s;
 }
 
 header nav button:hover {
-    background: #0056b3;
+    background: #01579b;
+    transform: scale(1.05);
 }
 
 /* Flex container for team bios and vision sections */
 .container {
-    width: 80%;
-    margin: 20px auto;
+    width: 85%;
+    margin: 30px auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 /* Card styling for individual team bios */
 .card {
     background: white;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    margin: 10px;
-    padding: 20px;
-    flex: 1 1 calc(30% - 40px);
+    border: 1px solid #e0f7fa;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    margin: 15px;
+    padding: 25px;
+    flex: 1 1 calc(40% - 40px);
     text-align: center;
-    transition: transform 0.2s;
+    transition: transform 0.2s ease;
 }
 
 .card:hover {
-    transform: scale(1.05);
+    transform: scale(1.04);
 }
 
-h2 {
-    margin: 0 0 10px;
+.card h2 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    color: #004d60;
 }
 
 /* Initially hide bio details */
 .bio {
     display: none;
     margin-top: 10px;
-    color: #555;
+    color: #455a64;
 }
 
 /* Button styling */
 button {
-    background: #007BFF;
+    background: #00acc1;
     color: white;
     border: none;
-    padding: 10px 15px;
-    border-radius: 5px;
+    padding: 10px 20px;
+    border-radius: 20px;
     cursor: pointer;
+    font-weight: bold;
+    font-family: 'Times New Roman', serif;
+    transition: background 0.3s, transform 0.2s;
 }
 
 button:hover {
-    background: #0056b3;
+    background: #007c91;
+    transform: scale(1.05);
+}
+
+#vision {
+    background-color: #e0f7fa;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    font-size: 1.1rem;
+    margin-top: 40px;
+}
+
+/* Billy's custom card style */
+.card.billy {
+    background-color: #fffbea;
+    border-left: 5px solid #fdd835;
+    box-shadow: 0 4px 10px rgba(255, 213, 79, 0.2);
+}
+
+.card.billy h2 {
+    color: #f9a825;
+}
+
+.card.billy button {
+    background-color: #fdd835;
+    color: #263238;
+    font-weight: bold;
+}
+
+.card.billy button:hover {
+    background-color: #fbc02d;
+    transform: scale(1.05);
+}
+
+/* Avatar image */
+.avatar {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
 }

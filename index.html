@@ -11,7 +11,7 @@
 <header>
     <h1>Meet Our Team</h1>
     <!-- Example team logo -->
-    <img src="img/team-logo.png" alt="Team Logo" class="team-logo">
+    <img src="img/Group18Logo.png" alt="Team Logo" class="team-logo">
 
     <!-- Navigation menu to switch between sections -->
     <nav>
@@ -23,17 +23,22 @@
 <!-- Team bios section (default section) -->
 <div id="bios" class="container">
     <!-- Each card represents an individual team member -->
+    <div class="card billy">
+        <img src="img/long1.jpg" alt="Billy Duong" class="avatar">
+        <h2>Billy Duong</h2>
+        <p>Product Owner</p>
+        <button onclick="toggleBio('bio1')">Show Bio</button>
+        <p id="bio1" class="bio">
+            Billy has experience working in a Scrum setup and is confident to lead the group on this project.<br><br>
+            <strong>Profile:</strong><br>
+            <a href="https://github.com/lonk26" target="_blank">GitHub</a>
+        </p>
+    </div>
     <div class="card">
         <h2>Tyler Hebner</h2>
         <p>Developer</p>
-        <button onclick="toggleBio('bio1')">Show Bio</button>
-        <p id="bio1" class="bio">Tyler has experience with python and sql and enjoys coding to fulfill requirements</p>
-    </div>
-    <div class="card">
-        <h2>Billy Duong</h2>
-        <p>Product Owner</p>
         <button onclick="toggleBio('bio2')">Show Bio</button>
-        <p id="bio2" class="bio">Billy has experience working in a Scrum setup and is confident to lead the group on this project.</p>
+        <p id="bio2" class="bio">Tyler has experience with python and sql and enjoys coding to fulfill requirements</p>
     </div>
     <div class="card">
         <h2>Wending Fang</h2>
@@ -43,9 +48,9 @@
     </div>
     <div class="card">
         <h2>Mark Crabb</h2>
-        <p>Placeholder Role</p>
+        <p>Developer</p>
         <button onclick="toggleBio('bio4')">Show Bio</button>
-        <p id="bio4" class="bio">This is a placeholder bio for the fourth team member. Update this text with real content.</p>
+        <p id="bio4" class="bio">Newly added member but very sociable and ready to take on any assigned job.</p>
     </div>
 </div>
 
